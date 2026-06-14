@@ -40,7 +40,7 @@ echo "Directory structure is successfully created"
 
 # Phase 2 - Dynamic Configuration (Stream Editing)
 read -p "Do you want to update the Attendance Thresholds ? (Yes/No): " update_decision
-if [ "$update_decision" = "yes" ]; then
+if [ "${update_decision,,}" = "yes" ]; then
 	read -p "Provide new Warning Threshold (default 75): " warning
 	read -p "Provide new Failure Threshold (default 50): " failure
 
