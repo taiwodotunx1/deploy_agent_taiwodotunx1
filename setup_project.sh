@@ -52,6 +52,17 @@ if [ "$failure" = "" ]; then
 	failure=50
 fi
 
+# if user also inputs anything other than numbers
+if ! [[ "$warning" =~ ^[0-9]+$ ]]; then
+    echo "Invalid! Enter number only, Using default 75."
+    warning=75
+fi
+
+if ! [[ "$failure" =~ ^[0-9]+$ ]]; then
+    echo "Invalid! Enter number only, Using default 50."
+    failure=50
+fi
+
 # Using the sed command to edit the json file and reflect the new values
 
 sed -i "s/\"warning\": [0-9]*/\"warning\": $warning/" "$PARENT_DIR/Helpers/config.json"
