@@ -20,4 +20,4 @@ When triggered:
 1. The script catches the interrupt signal (SIGINT)
 2. Bundles the incomplete project directory into a `.tar.gz` archive
 3. Deletes the incomplete directory
-4. Exits cleanly
+4. Exits
