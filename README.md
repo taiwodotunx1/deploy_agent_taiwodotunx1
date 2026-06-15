@@ -1,6 +1,6 @@
 # deploy_agent_taiwodotunx1
 
-# Brief Overview
+# Script Summary
 A shell script that automates the creation of a Student Attendance Tracker workspace,
 configures settings via the command line, and handles system signals gracefully.
 
